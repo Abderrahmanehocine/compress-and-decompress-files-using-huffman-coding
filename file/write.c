@@ -21,6 +21,7 @@ bool write_data(const char *filename, const char *data_code, int node_number, hu
     fprintf(file,"%d\n", node_number);
     write_huffman_tree(file, root);
     fwrite(data_code, sizeof(char), strlen(data_code), file);
+    fprintf(file,"\n");
     fclose(file);
     return 1;
 }
