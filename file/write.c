@@ -27,6 +27,8 @@ bool write_data(const char *filename, const char *data_code, int node_number, hu
 }
 
 bool write_decoded_data(const char *filename,const char *data){
+    if(data == NULL)
+        return 0;
     FILE *file = fopen(filename, "w");
     if (file == NULL) {
         fprintf(stderr, "Failed to open file %s.\n", filename);

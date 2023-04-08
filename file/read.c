@@ -76,6 +76,8 @@ char *read_code(const char *filename) {
 
     fseek(file, last_pos, SEEK_SET);
     fgets(line, sizeof(line), file);
+    
+    line[strlen(line)-1] = '\0';
 
     fclose(file);
 
