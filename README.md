@@ -9,7 +9,7 @@ Note: the program compress only text files</br>
 
 1. Open your terminal or command line </br>
 2. Clone this repository by typing this command: git clone https://github.com/Abderrahmanehocine/compress-and-decompress-files-using-huffman-coding.git</br>
-3. Go to the directory that contain the files of the code</br>
+3. Go to the directory that contain the files of the code: cd compress-and-decompress-files-using-huffman-coding</br>
 4. Compile the program using the Makefile(Type make in the cmd): make</br>
 5. Move the text file that you want to compress in the directory that contain the main.c file</br>
 6. To run the program type: ./huffman -c file1.txt file2.txt</br>
